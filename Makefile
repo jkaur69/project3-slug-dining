@@ -12,3 +12,11 @@ example2: example2.o dining.o utils.o
 .PHONY: clean
 clean:
 	- rm -f *.o example1 example2
+
+.PHONY: format
+format:
+	clang-format -i *.c *.h
+
+.PHONY: check-format
+check-format:
+	clang-format --dry-run --Werror *.c *.h
