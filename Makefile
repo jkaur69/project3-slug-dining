@@ -1,5 +1,5 @@
 CC=clang
-CFLAGS=-Wall -Wextra -Werror -std=c11 -pedantic -Wno-unused-parameter -gdwarf-4
+CFLAGS=-Wall -Wextra -Werror -std=c11 -pedantic -Wno-unused-parameter
 
 all: example1 example2
 
