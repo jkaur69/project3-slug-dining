@@ -15,6 +15,7 @@ dining_t *dining_init(int capacity) {
   return dining;
 }
 void dining_destroy(dining_t **dining) {
+  // TODO: Free dynamically allocated memory
   free(*dining);
   *dining = NULL;
 }
