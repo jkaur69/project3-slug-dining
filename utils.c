@@ -1,9 +1,11 @@
 // USED FOR TESTING. DO NOT MODIFY THIS FILE.
+#define _POSIX_C_SOURCE 200809L
 
 #include "utils.h"
 
 #include <errno.h>
 #include <stdio.h>
+#include <time.h>
 #include <unistd.h>
 
 student_t make_student(int student_id, dining_t* dining) {
